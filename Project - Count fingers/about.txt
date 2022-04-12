@@ -1,0 +1,9 @@
+Calculating No of fingers in the Region of Interest using following steps
+1. Grab a region of interest
+2. calculate running aveerage of the ROI uing first sixty frames and within this duration do not let any disturbance in the ROI
+3. Once average values is calculated, hand can enter in ROI
+4. Once hand enters, apply thresholding to segment out hand from the background
+5. Use convex hull to draw a polygon around the hand
+6. using convex hull get the top most lest most and the rightmost point of the hand
+7. use these point to get center of the hand and dram a circle of radius equal to the ninty percent of thedistance of center to the farthest point
+8. if the point lies outside this circle then increment the count of finger by one
